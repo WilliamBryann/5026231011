@@ -9,6 +9,6 @@
 	<p>Seri Tutorial Laravel Lengkap Dari Dasar</p>
 	<p>Ini adalah view blog. ada di route blog.</p>
 <br>
-<a href="satu">Pertemuan 1</a><br>
+<a href="pertemuan1">Pertemuan 1</a><br>
 </body>
 </html>
