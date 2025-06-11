@@ -5,6 +5,7 @@ use App\Http\Controllers\DosenController ;
 use App\Http\Controllers\PegawaiController ;
 use App\Http\Controllers\BlogController ;
 use App\Http\Controllers\PegawaiDBController;
+use App\Http\Controllers\MejaDBController;
 // import java.io ;
 
 // System.out.println("Hello World");
@@ -57,7 +58,7 @@ Route::get('danantara', function () {
 });
 
 Route::get('ets', function () {
-	return view('index');
+	return view('indexets');
 });
 
 Route::get('frontend', function () {
@@ -85,3 +86,13 @@ Route::post('/pegawai/update',[PegawaiDBController::class, 'update']);
 Route::get('/pegawai/hapus/{id}', [PegawaiDBController::class, 'hapus']);
 
 Route::get('/pegawai/cari', [PegawaiDBController::class, 'cari']);
+
+//route mejaDB
+Route::get('/meja', [MejaDBController::class, 'index']);
+Route::get('/meja/tambah', [MejaDBController::class, 'tambah']);
+Route::post('/meja/store', [MejaDBController::class, 'store']); //jika form dikirim, route ini akan dijalankan
+Route::get('/meja/edit/{id}',[MejaDBController::class, 'edit']);
+Route::post('/meja/update',[MejaDBController::class, 'update']);
+Route::get('/meja/hapus/{id}', [MejaDBController::class, 'hapus']);
+
+Route::get('/meja/cari', [MejaDBController::class, 'cari']);

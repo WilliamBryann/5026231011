@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html>
 
-<head>
+{{-- <head>
     <title>Tutorial Membuat CRUD Pada Laravel - www.malasngoding.com</title>
-</head>
+</head> --}}
 
 <body>
 
