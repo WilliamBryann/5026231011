@@ -6,6 +6,7 @@ use App\Http\Controllers\PegawaiController ;
 use App\Http\Controllers\BlogController ;
 use App\Http\Controllers\PegawaiDBController;
 use App\Http\Controllers\MejaDBController;
+use App\Http\Controllers\KaryawanDBController;
 // import java.io ;
 
 // System.out.println("Hello World");
@@ -96,3 +97,12 @@ Route::post('/meja/update',[MejaDBController::class, 'update']);
 Route::get('/meja/hapus/{id}', [MejaDBController::class, 'hapus']);
 
 Route::get('/meja/cari', [MejaDBController::class, 'cari']);
+
+//route karyawanDB
+Route::get('/karyawan', [KaryawanDBController::class, 'index']);
+Route::get('/karyawan/tambah', [KaryawanDBController::class, 'tambah']);
+Route::post('/karyawan/store', [KaryawanDBController::class, 'store']); //jika form dikirim, route ini akan dijalankan
+Route::post('/karyawan/update',[KaryawanDBController::class, 'update']);
+Route::get('/karyawan/hapus/{id}', [KaryawanDBController::class, 'hapus']);
+
+
