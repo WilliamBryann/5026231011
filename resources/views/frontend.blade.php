@@ -164,10 +164,10 @@
         <div class="card card-custom h-100 p-3 bg-light text-center">
             <div class="card-body">
               <h5 class="card-title font-weight-bold">Tugas Danantara</h5>
-              <p class="card-text">Project kolaborasi frontend.</p>
+              <p class="card-text">Sudah diganti dengan ETS</p>
             </div>
             <div class="card-footer bg-transparent border-0">
-                <a href="/danantara" class="btn btn-access">Akses Website</a>
+                <a href="/ets" class="btn btn-access">Akses Website</a>
             </div>
         </div>
     </div>

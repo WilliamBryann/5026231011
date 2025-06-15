@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>@yield('title', 'William Bryan Pangestu : 5026231011')</title>
+    <title>@yield('title', '5026231011 - William Bryan Pangestu')</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -105,13 +105,13 @@
                         <a class="nav-link" href="#"><i class="fas fa-file-alt mr-1"></i> EAS</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#"><i class="fas fa-pencil-ruler mr-1"></i> Latihan 1</a>
+                        <a class="nav-link" href="/latihan1"><i class="fas fa-pencil-ruler mr-1"></i> Latihan 1</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="/karyawan"><i class="fas fa-briefcase mr-1"></i> Latihan 2</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#"><i class="fas fa-pencil-ruler mr-1"></i> Latihan 3</a>
+                    <li class="nav-item"> {{--Latihan 3 sama dengan Latihan 2 sesuai file di Classroom--}}
+                        <a class="nav-link" href="/karyawan"><i class="fas fa-pencil-ruler mr-1"></i> Latihan 3</a>
                     </li>
                 </ul>
             </div>

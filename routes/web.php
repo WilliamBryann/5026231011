@@ -7,6 +7,7 @@ use App\Http\Controllers\BlogController ;
 use App\Http\Controllers\PegawaiDBController;
 use App\Http\Controllers\MejaDBController;
 use App\Http\Controllers\KaryawanDBController;
+use App\Http\Controllers\PageCounterDBController;
 // import java.io ;
 
 // System.out.println("Hello World");
@@ -105,4 +106,5 @@ Route::post('/karyawan/store', [KaryawanDBController::class, 'store']); //jika f
 Route::post('/karyawan/update',[KaryawanDBController::class, 'update']);
 Route::get('/karyawan/hapus/{id}', [KaryawanDBController::class, 'hapus']);
 
-
+//route pagecounterDB
+Route::get('/latihan1', [PageCounterDBController::class, 'index']);
