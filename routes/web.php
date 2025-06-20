@@ -8,6 +8,8 @@ use App\Http\Controllers\PegawaiDBController;
 use App\Http\Controllers\MejaDBController;
 use App\Http\Controllers\KaryawanDBController;
 use App\Http\Controllers\PageCounterDBController;
+use App\Http\Controllers\NilaiDBController;
+
 // import java.io ;
 
 // System.out.println("Hello World");
@@ -56,7 +58,7 @@ Route::get('validasi', function () {
 });
 
 Route::get('danantara', function () {
-	return view('danantara');
+	return view('indexets');
 });
 
 Route::get('ets', function () {
@@ -108,3 +110,8 @@ Route::get('/karyawan/hapus/{id}', [KaryawanDBController::class, 'hapus']);
 
 //route pagecounterDB
 Route::get('/latihan1', [PageCounterDBController::class, 'index']);
+
+//route eas
+Route::get('/eas', [NilaiDBController::class, 'index']);
+Route::get('/eas/tambah', [NilaiDBController::class, 'tambah']);
+Route::post('/eas/store', [NilaiDBController::class, 'store']); //jika form dikirim, route ini akan dijalankan

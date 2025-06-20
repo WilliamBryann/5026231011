@@ -102,7 +102,7 @@
                         <a class="nav-link" href="/meja"><i class="fas fa-table mr-1"></i> Tugas CRUD</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#"><i class="fas fa-file-alt mr-1"></i> EAS</a>
+                        <a class="nav-link" href="/eas"><i class="fas fa-file-alt mr-1"></i> EAS</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="/latihan1"><i class="fas fa-pencil-ruler mr-1"></i> Latihan 1</a>
