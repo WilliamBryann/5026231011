@@ -11,14 +11,6 @@
     {{-- action mengarah ke pegawai/store untuk dilakukan routing --}}
     <form action="/eas/store" method="post">
         {{ csrf_field() }}
-        <div class="row p-1 mb-1">
-            <div class="col-2">
-                <label class="control-label">ID </label>
-            </div>
-            <div class="col-6">
-                <textarea name="id" required="required" class="form-control"></textarea>
-            </div>
-        </div>
 
         <div class="row p-1 mb-1">
             <div class="col-2">
